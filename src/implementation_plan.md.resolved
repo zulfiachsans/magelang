@@ -1,0 +1,78 @@
+# Website Pengenalan Kota & Kabupaten Magelang
+
+Single-page React app that introduces Magelang (city + regency) covering history, tourist attractions, and local cuisine. Built with Vite + React + Tailwind CSS v3, responsive across all device sizes.
+
+## Proposed Changes
+
+### Project Bootstrap
+#### [NEW] Vite + React scaffold in `d:/project/web`
+
+Initialize with `npm create vite@latest . -- --template react`, then install:
+- `tailwindcss@3`, `postcss`, `autoprefixer`
+- `framer-motion` — scroll/entrance animations
+- `react-icons` — icon library
+- `swiper` — touch-friendly carousels
+
+---
+
+### Pages & Components
+
+#### [NEW] `src/App.jsx`
+Root component with single-page layout. Renders all sections in order:
+`Navbar → Hero → Sejarah → Wisata → Kuliner → Galeri → Footer`
+
+#### [NEW] `src/components/Navbar.jsx`
+- Sticky top nav with logo + section links
+- Mobile hamburger menu (animated drawer)
+- Transparent-to-solid on scroll
+
+#### [NEW] `src/components/Hero.jsx`
+- Full-screen parallax hero with Magelang tagline
+- Animated headline and CTA scroll button
+- Background gradient overlay on image
+
+#### [NEW] `src/components/Sejarah.jsx`
+- Timeline-style layout for Magelang history
+- Key historical milestones (Kerajaan Mataram, Kolonial Belanda, kemerdekaan)
+- Entrance animations on scroll
+
+#### [NEW] `src/components/Wisata.jsx`
+- Card grid for tourist attractions (Borobudur, Ketep Pass, Kopeng, Gunung Tidar, Taman Kyai Langgeng, dll)
+- Hover effects with destination details
+- Filter tabs: Alam / Budaya / Religi
+
+#### [NEW] `src/components/Kuliner.jsx`
+- Swiper carousel of local foods
+- Cards: Kupat Tahu, Soto Magelang, Gethuk, Bongko Kopyor, Nasi Lesah, dll
+- Vibrant food photography placeholders (generated images)
+
+#### [NEW] `src/components/Footer.jsx`
+- Links, social icons, copyright info
+
+#### [NEW] `src/index.css`
+- Tailwind base/components/utilities
+- Custom color palette and font (Inter/Poppins from Google Fonts)
+- Smooth scroll behavior
+
+---
+
+## Verification Plan
+
+### Automated Dev Server
+```
+npm run dev
+```
+Then open browser at `http://localhost:5173`.
+
+### Browser Testing
+- Use browser subagent to capture screenshots at:
+  - Mobile (390×844)
+  - Tablet (768×1024)
+  - Desktop (1440×900)
+- Verify each section renders correctly and animations trigger
+
+### Manual Verification
+1. Resize browser window from small (320px) to wide (1440px+) — ensure layout adapts
+2. Click each navbar link — confirm smooth scroll to section
+3. Swipe or drag the Kuliner carousel
+4. Hover over Wisata cards — confirm hover effects appear

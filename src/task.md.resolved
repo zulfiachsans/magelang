@@ -1,0 +1,29 @@
+# Magelang Website Task Checklist
+
+## Planning
+- [x] Understand user requirements
+- [x] Plan website structure and sections
+- [/] Write implementation plan
+
+## Setup
+- [ ] Initialize Vite + React project in d:\project\web
+- [ ] Install Tailwind CSS v3
+- [ ] Install supporting packages (react-router-dom, framer-motion, react-icons, swiper)
+- [ ] Configure Tailwind and base styles
+
+## Implementation
+- [ ] Create base layout (Navbar + Footer)
+- [ ] Hero section with Magelang panorama
+- [ ] Sejarah (History) section
+- [ ] Wisata (Tourist Attractions) section
+- [ ] Kuliner (Cuisine) section
+- [ ] About / Info section
+- [ ] Smooth scroll & animations
+- [ ] Responsive design (mobile, tablet, desktop)
+
+## Verification
+- [ ] Test on mobile viewport
+- [ ] Test on tablet viewport
+- [ ] Test on desktop viewport
+- [ ] Verify all sections render correctly
+- [ ] Check assets and images load
